@@ -1,0 +1,418 @@
+body{
+    background:
+    linear-gradient(to bottom left,
+        rgba(0,255,255,0.12),
+        transparent 55%),
+
+    linear-gradient(to bottom right,
+        rgba(255, 0, 255, 0.12),
+        transparent 73%),
+
+    linear-gradient(
+        180deg,
+        #050505,
+        #101010,
+        #050505);
+    color:white;
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+
+.header{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+     height: 60px;
+    width: auto;
+    transition: 0.3s;
+}
+
+.logo:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px cyan;
+}
+.logosJ{
+    width: 320px;
+    height: auto;
+    position: absolute; 
+    left: 180px;          
+    top: 50%;
+    transform: translateY(-50%);
+}
+.topbar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+.redes
+{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.redes img {
+    height: 50px;
+    width: auto;
+    transition: 0.3s;
+}
+.redes img:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 10px cyan);
+}
+.banner{
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+.BANNERG {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}
+h1{
+    font-size: 45px;
+    color: white;
+}
+
+.banner p{
+    font-size: 20px;
+}
+
+/* DISCORD */
+
+.btn-discord img{
+    width: 260px;
+    transition: 0.3s;
+}
+
+.btn-discord img:hover{
+    transform: scale(1.05);
+    filter: brightness(1.2);
+}
+
+/* JUEGOS */
+
+.juegos{
+    margin-top: 80px;
+}
+
+.juegos h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.grid{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* CARDS */
+
+.card{
+    width: 180px;
+    height: 100px;
+
+    border: 3px solid cyan;
+    position: relative;
+
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px cyan;
+}
+
+/* IMAGENES */
+.game-img{
+    width: 100%;
+    height: 100%;
+}
+
+/* SUBMENU */
+
+.submenu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+
+    background: black;
+
+    display: none;
+    flex-direction: column;
+    z-index: 100 ;
+
+    transition: 0.3s;
+}
+
+.card:hover .submenu{
+    display: flex;
+    
+}
+
+.submenu a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-top: 1px solid cyan;
+}
+
+.submenu a:hover{
+    background: cyan;
+    color: black;
+}
+
+/* SPONSORS */
+
+.sponsors{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.sponsor-logos{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.sponsor-logos img{
+    width: 50px;
+    height: 50px;
+    filter: grayscale(100%);
+    transition: 0.3s;
+}
+
+.sponsor-logos img:hover{
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+/* PAGINA DE LOS JUEGOS */
+.GAME-page{
+    background: #070707;
+    color: white;
+    font-family: monospace;
+    margin: 0;
+    padding: 30px;
+}
+
+/* HEADER */
+
+.GAME-page .top{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+}
+
+.GAME-page h1{
+    font-size: 45px;
+}
+
+/* CONTENIDO */
+
+.contenido{
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+/* TABLA */
+
+.tabla-box{
+    width: 35%;
+}
+
+.tabla-box h2{
+    margin-bottom: 20px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.jugador{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    background: #111;
+
+    padding: 12px;
+
+    margin-bottom: 12px;
+
+    border-left: 4px solid cyan;
+
+    transition: 0.3s;
+}
+.tabla-box a:nth-child(even) .jugador {
+    background: #1a1a1a;
+    border-left-color: magenta;
+}
+
+.tabla-box a:nth-child(odd) .jugador:hover {
+    transform: translateX(5px);
+    box-shadow: 0px 0px 10px cyan;
+    border-left-color: cyan;
+}
+
+.tabla-box a:nth-child(even) .jugador:hover {
+    transform: translateX(5px);
+    box-shadow: 0px 0px 10px magenta;
+    border-left-color: magenta;
+}
+.jugador img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.jugador p{
+    margin: 0;
+    font-size: 18px;
+}
+
+.jugador small{
+    color: #aaa;
+}
+.stats {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    width: 60px;
+}
+
+.stat-bar {
+    height: 6px;
+    width: 100%;
+    background: #222;
+    border-radius: 99px;
+    overflow: hidden;
+    position: relative;
+}
+
+.stat-bar::after {
+    content: "";
+    position: absolute;
+    left: 0; top: 0;
+    height: 100%;
+    width: var(--pct);
+    background: var(--color);
+    box-shadow: 0 0 8px var(--color);
+    border-radius: 99px;
+}
+/* TORNEOS */
+
+.torneos{
+    flex: 1;
+}
+
+.torneos h2{
+    margin-bottom: 20px;
+}
+
+.torneo-card{
+    background: #111;
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+
+    border: 2px solid magenta;
+
+    transition: 0.3s;
+}
+
+.torneo-card:hover{
+    box-shadow: 0px 0px 15px magenta;
+}
+
+.torneo-card h3{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* EQUIPOS */
+
+.equipos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.equipo{
+    text-align: center;
+}
+
+.equipo img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.equipo p{
+    margin: 10px 0px 5px;
+}
+
+.fecha{
+    display: block;
+    text-align: center;
+    margin-top: 25px;
+    color: cyan;
+    font-size: 18px;
+}
+/* PERFILES */
+.profile-box
+{
+    background: #111;
+    border: 2px solid cyan;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+.avatar
+{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+.info h1{
+    margin: 0;
+}
+.info p{
+    color: cyan;
+}
+.STATS
+{
+    display: flex;
+    gap: 20px;
+}
+.STAT
+{
+    background: #111;
+    border: 2px solid magenta;
+    padding: 20px;
+    width: 150px;
+    text-align: center;
+}
